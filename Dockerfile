@@ -9,7 +9,7 @@
 #ENV SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT org.hibernate.dialect.MySQL55Dialect
 #ENV SECURITY_BASIC_ENABLE false
 #ENTRYPOINT ["java", "-jar", "ELearningManagement-0.0.1-SNAPSHOT.jar"]
-EXPOSE 8080
+#EXPOSE 8080
 FROM openjdk:17
 ADD target/ELearningManagement-0.0.1-SNAPSHOT.jar  springboot-mysql-docker.jar
 ENTRYPOINT ["java","-jar","springboot-mysql-docker.jar"]
