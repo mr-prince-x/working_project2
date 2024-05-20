@@ -23,7 +23,7 @@ public class LoginController
 	@GetMapping("/")
     public String welcomeMessage()
     {
-    	return "Welcome !!!";
+    	return "Welcome to Elearning system !!!";
     }
 	
 	@PostMapping("/loginuser")
